@@ -1,0 +1,82 @@
+<div class="text-center custome_body">
+  <div class="logo">
+    <img
+      class="mb-4"
+      src="../../../assets/image/logo.webp"
+      alt=""
+      width="65"
+      height="65"
+    />
+    <div class="company">Pandit Dekho</div>
+  </div>
+  <main class="form-signin">
+    <form #clientform="ngForm" class="custome_form" (ngSubmit)="onSubmit(clientform)">
+      <!-- [formGroup]="clientForm" (ngSubmit)="onSubmit()" -->
+
+      <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="clientService.selectedClient._id">
+
+      <div class="form-floating custume_inputs">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingName"
+          name="name" #name="ngModel" [(ngModel)]="clientService.selectedClient.name"
+          placeholder="name" required=""
+        />
+        <label for="floatingInput">Name</label>
+      </div>
+      <div class="form-floating custume_inputs">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          name="phone" #phone="ngModel" [(ngModel)]="clientService.selectedClient.phone"
+          placeholder="9832625351"
+        />
+        <label for="floatingInput">Phone no:</label>
+      </div>
+      <div class="form-floating custume_inputs">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingState"
+          name="state" #state="ngModel" [(ngModel)]="clientService.selectedClient.state"
+          placeholder="State"
+        />
+        <label for="floatingInput">State</label>
+      </div>
+      <div class="form-floating custume_inputs">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingCity"
+          name="city" #city="ngModel" [(ngModel)]="clientService.selectedClient.city"
+          placeholder="City"
+        />
+        <label for="floatingInput">City</label>
+      </div>
+      <!-- <div class="form-floating custume_inputs">
+            <input
+              type="password"
+              class="form-control"
+              id="floatingPassword"
+              placeholder="Password"
+            />
+            <label for="floatingPassword">Password</label>
+          </div> -->
+      <!-- <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me" /> Remember me
+          </label>
+        </div> -->
+      <input class="w-100 btn btn-lg btn-danger custome_btn" type="submit" />
+      <input class="w-100 btn btn-lg btn-danger custome_btn" type="reset"  (click)="resetForm(clientform)"/>
+      <!-- <button class="w-100 btn btn-lg btn-danger custome_btn" type="submit">
+          Submit
+        </button> -->
+    </form>
+  </main>
+  <div class="footer">
+    <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
+  </div>
+</div>

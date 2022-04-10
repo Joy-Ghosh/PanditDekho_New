@@ -1,0 +1,31 @@
+.custome_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 2rem;
+  }
+
+  .company {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .custome_form {
+    width: 600px;
+    height: 450px;
+    background: rgb(241, 165, 23);
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .custome_btn {
+    background-color: rgba(255, 68, 0, 0.404);
+  }
+
+  .custume_inputs {
+    margin: 1rem 0rem;
+  }

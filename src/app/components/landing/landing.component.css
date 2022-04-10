@@ -1,0 +1,63 @@
+nav a {
+  text-decoration: none;
+  color: orangered;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo_img {
+  height: 50px;
+  padding-right: 1rem;
+}
+
+.logo_text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.middle_nav {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+}
+
+.custome_banner {
+  background: orange !important;
+  height: 600px;
+  margin: 2rem 0rem;
+}
+
+.right_nav {
+  display: flex;
+}
+
+.signup {
+  background: orangered;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.signup:hover {
+  background: rgba(255, 68, 0, 0.24);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.signup a {
+  color: white;
+}
+
