@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 import { ClientSignupService } from 'src/app/service/client-signup.service';
@@ -13,8 +14,10 @@ import { ClientSignupService } from 'src/app/service/client-signup.service';
 })
 export class ClientSignupComponent implements OnInit {
 
+
   constructor(
-    public clientService: ClientSignupService
+    public clientService: ClientSignupService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -39,7 +42,7 @@ export class ClientSignupComponent implements OnInit {
   onSubmit(form: NgForm) {
     this.clientService.postClientSignup(form.value).subscribe((res) => {
       this.resetForm(form);
-      // alert ("This is an alert dialog box");
+      this.router.navigate(['/pandits']);
     })
   }
 
