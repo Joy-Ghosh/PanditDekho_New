@@ -16,14 +16,41 @@
 
   .custome_form {
     width: 600px;
-    height: 450px;
+    height: 100%;
     background: rgb(241, 165, 23);
     border-radius: 1rem;
     padding: 1rem;
   }
-
+  .btn-container{
+    display: flex;
+    justify-content: space-around;
+  }
   .custome_btn {
-    background-color: rgba(255, 68, 0, 0.404);
+    background: orangered;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+    width: 40% !important;
+  }
+  
+  .custome_btn:hover {
+    background: rgb(218,35,0);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+
   }
 
   .custume_inputs {

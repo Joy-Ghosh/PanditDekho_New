@@ -24,40 +24,36 @@ nav a {
 }
 
 .custome_banner {
-  background: orange !important;
-  height: 600px;
-  margin: 2rem 0rem;
+  background: url("../../../assets/image/banner.jpg");
+  height: 100%;
+  background-size: cover;
+}
+.custome_font {
+  padding: 0rem 1.5rem;
+}
+.custome_font_p {
+  /* color: #f6ed00; */
+  background: linear-gradient(45deg,rgba(0, 0, 0, 0), rgb(218,35,0), rgba(0, 0, 0, 0)) !important;
 }
 
 .right_nav {
   display: flex;
 }
 
-.signup {
+.startbtn {
+  background: white;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: rgb(218,35,0);
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+.startbtn:hover{
   background: orangered;
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.signup:hover {
-  background: rgba(255, 68, 0, 0.24);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-}
-
-.signup a {
   color: white;
 }
 

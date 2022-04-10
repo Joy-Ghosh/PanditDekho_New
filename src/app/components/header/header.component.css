@@ -30,6 +30,8 @@ nav a {
   
   .right_nav {
     display: flex;
+    justify-content: space-between;
+    width: 20%;
   }
   
   .signup {
@@ -42,10 +44,11 @@ nav a {
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    border: none;
   }
   
   .signup:hover {
-    background: rgba(255, 68, 0, 0.24);
+    background: rgb(218,35,0);
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
@@ -54,6 +57,8 @@ nav a {
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    border: none;
+
   }
   
   .signup a {

@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'landing' },
   { path: 'landing', component: LandingComponent },
   { path: 'client_signup', component: ClientSignupComponent },
+  { path: 'pandit_registration', component: PanditRegistrationComponent },
   { path: 'pandits', component: PanditListComponent },
   { path: 'about', component: AboutComponent },
 ];

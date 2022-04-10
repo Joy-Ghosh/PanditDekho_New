@@ -1,1 +1,77 @@
-<p>pandit-registration works!</p>
+<div class="text-center custome_body">
+  <div class="logo">
+    <img
+      class="mb-4"
+      src="../../../assets/image/logo.webp"
+      alt=""
+      width="65"
+      height="65"
+    />
+    <div class="company">Pandit Dekho</div>
+  </div>
+  <main class="form-signin">
+    <form class="custome_form">
+      <!-- #clientform="ngForm" [formGroup]="clientForm" (ngSubmit)="onSubmit(clientform)" -->
+
+      <input type="hidden" name="_id" />
+
+      <div class="form-floating custume_inputs">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingName"
+          name="name"
+          placeholder="name"
+          required=""
+        />
+        <label for="floatingInput">Name</label>
+      </div>
+      <div class="form-floating custume_inputs">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          name="phone"
+          placeholder="9832625351"
+        />
+        <label for="floatingInput">Phone no:</label>
+      </div>
+      <div class="form-floating custume_inputs">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingState"
+          name="state"
+          placeholder="State"
+        />
+        <label for="floatingInput">State</label>
+      </div>
+      <div class="form-floating custume_inputs">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingCity"
+          name="city"
+          placeholder="City"
+        />
+        <label for="floatingInput">City</label>
+      </div>
+
+      <div class="container btn-container">
+        <input class="w-50 btn btn-lg btn-danger custome_btn" type="reset" />
+        <input class="w-50 btn btn-lg btn-danger custome_btn" type="submit" />
+      </div>
+    </form>
+  </main>
+  <div class="footer">
+    <p class="mt-5 mb-3 text-muted">&copy; 2022–2023</p>
+  </div>
+</div>
+<!-- sdzfousauof -->
+<!--            #city="ngModel" [(ngModel)]="clientService.selectedClient.city"
+                 #state="ngModel" [(ngModel)]="clientService.selectedClient.state"
+                  #phone="ngModel" [(ngModel)]="clientService.selectedClient.phone"
+                   #name="ngModel" [(ngModel)]="clientService.selectedClient.name"
+                    #_id="ngModel" [(ngModel)]="clientService.selectedClient._id"
+
+-->
