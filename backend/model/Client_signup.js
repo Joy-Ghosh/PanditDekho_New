@@ -12,7 +12,9 @@ var Client = mongoose.model("Client", {
   },
   city: {
     type: String,
-  },
+  }, password:{
+    type: String
+  }
 });
 
 module.exports = { Client };
