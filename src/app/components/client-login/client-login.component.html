@@ -15,7 +15,10 @@
       ></div>
     </div>
     <main class="form-signin">
-      <form class="custome_form">
+      <form class="custome_form" 
+      #clientLoginform="ngForm"
+      class="custome_form"
+      (ngSubmit)="onSubmit(clientLoginform)">
         <!-- #clientform="ngForm" [formGroup]="clientForm" (ngSubmit)="onSubmit(clientform)" -->
   
         <input type="hidden" name="_id" />
