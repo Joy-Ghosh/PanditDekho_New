@@ -14,6 +14,8 @@ import { PanditRegistrationComponent } from './components/pandit-registration/pa
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ClientLoginComponent } from './components/client-login/client-login.component';
+import { ServiceComponent } from './components/service/service.component';
+import { AllPujaRequestComponent } from './components/all-puja-request/all-puja-request.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ClientLoginComponent } from './components/client-login/client-login.com
     PanditRegistrationComponent,
     HeaderComponent,
     FooterComponent,
-    ClientLoginComponent
+    ClientLoginComponent,
+    ServiceComponent,
+    AllPujaRequestComponent
   ],
   imports: [
     BrowserModule,

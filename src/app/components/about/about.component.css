@@ -1,5 +1,19 @@
 .custome_banner_new {
-  background: orangered !important;
+  background: url("../../../assets/image/banner.jpg");
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; 
+   linear-gradient(45deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0)),*/
+}
+.custome_font{
+  padding: 0rem 1.5rem;
+}
+.custome_font_p{
+  /* color: #f6ed00; */
+  background: linear-gradient(45deg, rgb(218,35,0), rgba(0, 0, 0, 0));
 }
 .abt_img {
   height: auto;
