@@ -37,6 +37,8 @@ export class ClientSignupComponent implements OnInit {
       phone: "",
       state: "",
       city: "",
+      password: "",
+
     }
   }
   onSubmit(form: NgForm) {

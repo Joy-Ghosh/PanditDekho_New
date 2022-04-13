@@ -4,6 +4,8 @@ export class ClientSignup {
     phone!: string;
     state!: string;
     city!: string;
+    password!: string;
+
 }
 
 

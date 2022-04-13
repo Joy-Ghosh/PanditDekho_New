@@ -7,7 +7,12 @@
       width="65"
       height="65"
     />
-    <div class="company">Pandit Dekho</div>
+    <div class="company"><a
+      class="navbar-brand logo_text"
+      routerLinkActive="active"
+      routerLink="/landing"
+      >PANDIT DEKHO</a
+    ></div>
   </div>
   <main class="form-signin">
     <form
@@ -72,6 +77,18 @@
           placeholder="City"
         />
         <label for="floatingInput">City</label>
+      </div>
+      <div class="form-floating custume_inputs">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingPaassword"
+          name="password"
+          #password="ngModel"
+          [(ngModel)]="clientService.selectedClient.password"
+          placeholder="password"
+        />
+        <label for="floatingInput">Password</label>
       </div>
       <div class="container btn-container">
         

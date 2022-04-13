@@ -11,7 +11,7 @@ const userValidate = (req, res, next) => {
 
 //to get all data
 //=> localhost:4100/clients/list
-router.get("/list", userValidate, (req, res) => {
+router.get("/list", (req, res) => {
   Client.find((err, docs) => {
     if (!err) {
       res.send(docs);
@@ -23,7 +23,7 @@ router.get("/list", userValidate, (req, res) => {
 
 //get the data
 //=> localhost:4100/clients/id to get specific data
-router.get("/:id", userValidate, (req, res) => {
+router.get("/:id", (req, res) => {
   if (!ObjectId.isValid(req.params.id))
     return res.status(400).send(`No record with given id : ${req.params.id}`);
   Client.findById(req.params.id, (err, doc) => {
@@ -37,7 +37,7 @@ router.get("/:id", userValidate, (req, res) => {
 
 //to post to db
 //=> localhost:4100/clients/
-router.post("/", userValidate, (req, res) => {
+router.post("/", (req, res) => {
   var client = new Client({
     name: req.body.name,
     phone: req.body.phone,
@@ -55,7 +55,7 @@ router.post("/", userValidate, (req, res) => {
 });
 
 //update data
-router.put("./:id", userValidate, (req, res) => {
+router.put("./:id", (req, res) => {
   if (!ObjectId.isValid(req.params.id))
     return res.status(400).send(`No record with given id : ${req.params.id}`);
   var client = {
@@ -80,7 +80,7 @@ router.put("./:id", userValidate, (req, res) => {
   );
 });
 
-router.delete("/:id", userValidate, (req, res) => {
+router.delete("/:id", (req, res) => {
   if (!ObjectId.isValid(req.params.id))
     return res.status(400).send(`No record with given id : ${req.params.id}`);
   Client.findByIdAndRemove(req.params.id, (err, doc) => {
@@ -93,13 +93,17 @@ router.delete("/:id", userValidate, (req, res) => {
     }
   });
 });
+
+
+//login 
 router.post("/login", (req, res) => {
   let { phone, password } = req.body;
   Client.findOne({ phone: phone, password: password }, (err, client) => {
     if (!err) {
       res
-        .cookie("user", client._id, { expires: new Date() + 60 * 60 })
-        .send(client);
+        // .router.navigate(['/pandits']);
+      .cookie("user", client._id, { expires: new Date() + 60 * 60 })
+      .send(client);
     } else {
       console.log("error in client save: " + JSON.stringify(err, undefined, 2));
     }

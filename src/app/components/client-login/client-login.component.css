@@ -1,0 +1,94 @@
+.custome_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    margin-top: 2rem;
+  }
+  .logo_text{
+    color: rgb(44, 44, 44);
+  }
+
+  .company {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .custome_form {
+    width: 600px;
+    height: 100%;
+    background: rgb(241, 165, 23);
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  .btn-container{
+    display: flex;
+    justify-content: space-around;
+  }
+  .custome_btn {
+    background: orangered;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+    width: 40% !important;
+  }
+  
+  .custome_btn:hover {
+    background: rgb(218,35,0);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+
+  }
+.custome_btn a{
+    text-decoration: none;
+    color: #ffffff;
+}
+  .custume_inputs {
+    margin: 1rem 0rem;
+  }
+  /* .signup {
+    background: orangered;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+  }
+  
+  .signup:hover {
+    background: rgb(218,35,0);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+
+  }
+  
+  .signup a {
+    color: white;
+  } */

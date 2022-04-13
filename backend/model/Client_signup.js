@@ -12,7 +12,7 @@ var Client = mongoose.model("Client", {
   },
   city: {
     type: String,
-  }, password:{
+  }, password: {
     type: String
   }
 });
