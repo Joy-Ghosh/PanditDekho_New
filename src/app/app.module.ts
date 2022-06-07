@@ -16,6 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ClientLoginComponent } from './components/client-login/client-login.component';
 import { ServiceComponent } from './components/service/service.component';
 import { AllPujaRequestComponent } from './components/all-puja-request/all-puja-request.component';
+import { NewHeaderComponent } from './components/new-header/new-header.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { AllPujaRequestComponent } from './components/all-puja-request/all-puja-
     FooterComponent,
     ClientLoginComponent,
     ServiceComponent,
-    AllPujaRequestComponent
+    AllPujaRequestComponent,
+    NewHeaderComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

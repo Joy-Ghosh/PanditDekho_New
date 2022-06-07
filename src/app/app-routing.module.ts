@@ -8,6 +8,7 @@ import { PanditRegistrationComponent } from './components/pandit-registration/pa
 import { ClientLoginComponent } from './components/client-login/client-login.component';
 import { ServiceComponent } from './components/service/service.component';
 import { AllPujaRequestComponent } from './components/all-puja-request/all-puja-request.component';
+import { ChatComponent } from './components/chat/chat.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'landing' },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'client_login', component: ClientLoginComponent },
   { path:'service', component: ServiceComponent},
   {path:'puja_requests', component:AllPujaRequestComponent},
+  {path:'chats', component:ChatComponent},
 ];
 
 @NgModule({
