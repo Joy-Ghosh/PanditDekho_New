@@ -19,15 +19,22 @@
 }
 
 .accept_btn {
-    color: white;
     -webkit-border-radius: 28;
     -moz-border-radius: 28;
     border-radius: 28px;
     font-family: Arial;
-    background: rgb(218, 35, 0);
+    background-color: orangered;
+    border: 1px solid rgb(255, 69, 0);
+    color: #ffff;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     border: none;
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
